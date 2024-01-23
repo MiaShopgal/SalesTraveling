@@ -52,5 +52,13 @@ struct DirectionModel: Codable, Equatable {
 		let polyline = routes.first!.polyline
 		self.polylineData = Data(buffer: UnsafeBufferPointer(start: polyline.points(), count: polyline.pointCount))
 	}
-	
+}
+
+extension DirectionModel: CustomStringConvertible {
+    var description: String {
+        return """
+            source: \(source)
+            destination: \(destination)
+            """
+    }
 }
