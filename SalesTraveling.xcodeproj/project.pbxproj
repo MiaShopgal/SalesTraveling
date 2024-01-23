@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0271C12B5FAAF000C25395 /* DataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0271C02B5FAAF000C25395 /* DataManagerTests.swift */; };
 		7E63348F207200BB007A2A85 /* UIAlertController+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63348E207200BB007A2A85 /* UIAlertController+Init.swift */; };
 		7EB0D60A1F9E341B00268E3B /* TourModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0D6091F9E341B00268E3B /* TourModel.swift */; };
 		7EFBA2621F9C4B480011007E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBA2611F9C4B480011007E /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		084CED7424ED9FE0003B551C /* SalesTravelingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalesTravelingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		084CED7824ED9FE0003B551C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D0271C02B5FAAF000C25395 /* DataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerTests.swift; sourceTree = "<group>"; };
 		7E06DA2C20514DAA0020A192 /* Cardino Blue.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Cardino Blue.gpx"; sourceTree = "<group>"; };
 		7E63348E207200BB007A2A85 /* UIAlertController+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Init.swift"; sourceTree = "<group>"; };
 		7EB0D6091F9E341B00268E3B /* TourModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourModel.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				084CED7824ED9FE0003B551C /* Info.plist */,
+				0D0271C02B5FAAF000C25395 /* DataManagerTests.swift */,
 			);
 			path = SalesTravelingTests;
 			sourceTree = "<group>";
@@ -275,14 +278,14 @@
 				TargetAttributes = {
 					084CED7324ED9FE0003B551C = {
 						CreatedOnToolsVersion = 11.6;
-						LastSwiftMigration = 1160;
+						LastSwiftMigration = 1520;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7EFBA25D1F9C4B480011007E;
 					};
 					7EFBA25D1F9C4B480011007E = {
 						CreatedOnToolsVersion = 9.0.1;
 						LastSwiftMigration = 1020;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -333,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0271C12B5FAAF000C25395 /* DataManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +406,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57H877J8K2;
 				INFOPLIST_FILE = SalesTravelingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -424,6 +429,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57H877J8K2;
 				INFOPLIST_FILE = SalesTravelingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -555,15 +561,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 9LB9NKBAM6;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57H877J8K2;
 				INFOPLIST_FILE = SalesTraveling/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.shodo;
+				PRODUCT_BUNDLE_IDENTIFIER = miao.playing.sales.traveling;
 				PRODUCT_NAME = Shoto;
 				PROVISIONING_PROFILE = "bd40195c-5ef6-4e44-9244-5b8308f9b92f";
-				PROVISIONING_PROFILE_SPECIFIER = Shodo_development;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -573,16 +580,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 9LB9NKBAM6;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57H877J8K2;
 				INFOPLIST_FILE = SalesTraveling/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tw.com.shodo;
 				PRODUCT_NAME = Shoto;
 				PROVISIONING_PROFILE = "b9e3d4fe-d4e6-43d5-93b4-44e03b8ace37";
-				PROVISIONING_PROFILE_SPECIFIER = Shodo_distribution;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
