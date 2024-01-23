@@ -29,7 +29,6 @@ class DataManagerTests: XCTestCase {
         let exp = expectation(description: "wait for fetch completion")
 
         sut.fetchDirections(ofNew: new, toOld: [oldToNew1.source, oldToNew2.source], current: currnetToNew.source) { result in
-            exp.fulfill()
             switch result {
                 case let .success(directions):
 //                    XCTAssertEqual(directions, [currnetToNew,
@@ -48,6 +47,7 @@ class DataManagerTests: XCTestCase {
                 case let .failure(error):
                     XCTFail("failed with error :\(error)")
             }
+            exp.fulfill()
         }
 
         waitForExpectations(timeout: 0.1)
