@@ -113,13 +113,7 @@ extension HYCPlacemark {
 	
 	override var description: String {
 		return """
-		
 		name: \(String(describing: name))
-		title: \(String(describing: title))
-		subtitle: \(String(describing: subtitle))
-		latitude: \(coordinate.latitude)
-		longitude: \(coordinate.longitude)
-		
 		"""
 	}
 }
